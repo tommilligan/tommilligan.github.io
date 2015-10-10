@@ -22,7 +22,7 @@
     font-family: "saxmono";
     src: url("../assets/fonts/saxmono.ttf");
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p , span {
     font-family: "SourceSansPro", sans-serif;
     margin: 0px;
 }
@@ -56,12 +56,9 @@ p.tags {
     font-family: "saxmono", monospace;
     font-style: italic;
 }
-div.projectlink, div.projecttitle {
+div.projectlink, #titlebar, #bottombar {
     border-bottom: 1px solid #AAAAAA;
     overflow: auto;
-}
-div.projecttitle {
-    padding-left: 10px;
 }
 div.projectlink {
     background-color: rgba(255, 255, 255, 0.7);
@@ -115,4 +112,9 @@ div.textholder {
 }
 img.newtab {
     margin-right: 4px;
+}
+#bottombar {
+    color: #777777;
+    font-size: 12px;
+    text-align: center;
 }
