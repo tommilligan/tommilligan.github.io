@@ -38,6 +38,7 @@ html, body, #wrapper {
     margin: 0;
     padding: 0;
     border: 0;
+    background-color: #ffffff;
 }
 div {
     /*border: 2px dashed #000077;*/
@@ -56,9 +57,12 @@ p.tags {
     font-family: "saxmono", monospace;
     font-style: italic;
 }
-div.projectlink {
+div.projectlink, div.projecttitle {
     border-bottom: 1px solid #AAAAAA;
     overflow: auto;
+}
+div.projectlink {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 img.projectscreenshot {
     width: 200px;
@@ -73,7 +77,6 @@ div.shotholder {
 }
 div.textholder {
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.7);
 }
 #topbar-wrapper {
 }

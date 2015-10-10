@@ -12,8 +12,8 @@
     </div>
     <div id="content-wrapper">
         <div id='links-holder'>
-            <div class="projectlink">
-                <h2>Projects<h2>
+            <div class="projecttitle">
+                <h2>Projects</h2>
             </div>
             <div id="LAlchemy-link" class="projectlink">
                 <div class="shotholder">
@@ -29,8 +29,10 @@
                     <p>To visualise the network, elements and their parents were documented in XML, along with a calculated colour.
                         From any starting elements(s), children can be calculated to the nth degree and an svg network drawn using the javascript <a href="http://felix-kling.de/JSNetworkX/" target="_blank">jsNetworkX</a> library.
                     </p>
-                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='LAlchemy-Map' target="_blank">website</a></p>
-                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/LAlchemy-Map' target="_blank">source</a></p>
+                    <p>This was a good project for building JQuery and ajax/XML knowledge - I aimed to host this on Github pages, meaning no server side scripting.
+                        As one of the first truly interactive websites I have built, I learnt more about javascript's asynchronous style and control flow.
+                    </p>                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='LAlchemy-Map' target="_blank">project website</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/LAlchemy-Map' target="_blank">source on Github</a></p>
                     <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://littlealchemy.com/' target="_blank">official Little Alchemy game</a></p>
                     <p class="tags">Areas: javascript, web design, interactive, XML
                     </p>
@@ -49,8 +51,12 @@
                     <p>Using the <a href="https://developers.google.com/custom-search/" target="_blank">Google Custom Search API</a>, the script submits a search query and retrieves an image, calculating the average pixel colour and returning it as a hex value.
                         Optionally, only the hue can be returned (i.e. hsl = (x, 1.0, 0.5). 
                     </p>
-                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">source</a></p>
-                    <p class="tags">Areas: python
+                    <p>This is the first Python package I have written up neatly and posted on <a href="https://pypi.python.org/pypi" target="_blank">PyPI</a>, which was interesting in itself.
+                        I used this module for my LAlchemy-Map project (see above) to generate colours for the network nodes.
+                    </p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">source and documentation on Github</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://pypi.python.org/pypi/WhatColorIsX' target="_blank">package on PyPI</a></p>
+                    <p class="tags">Areas: python, Google API
                     </p>
                 </div>
             </div>
@@ -69,8 +75,12 @@
                         An force-algorithm network was generated using the python <a href="https://networkx.github.io/" target="_blank">NetworkX</a> module, and skinned using the PIL <a href="https://python-pillow.github.io/" target="_blank">Pillow fork</a>.
                         The resulting large image was sliced and output in <a href="https://github.com/turban/Leaflet.Zoomify" target="_blank">Zoomify</a> format for web viewing with <a href="http://leafletjs.com/" target="_blank">Leaflet</a>.
                     </p>
-                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='RainWorld-Map' target="_blank">website</a></p>
-                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/RainWorld-Map' target="_blank">source</a></p>
+                    <p>This project had a few good challenges, mostly working with images bigger than single process memory allowance (~2GB).
+                        I enjoyed designing the aesthetics as well as the code, and even looked into proceedurally building the back end database by image recognition of exits (sadly ths was not to be).
+                        Hopefully I will continue to improve this project for the game's actual release (currently in alpha) to eliminate some of the manual data input, improve readability and improve efficiency of image generation.
+                    </p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='RainWorld-Map' target="_blank">project website</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/RainWorld-Map' target="_blank">source on Github</a></p>
                     <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='http://store.steampowered.com/app/312520/' target="_blank">official Rain World on Steam</a></p>
                     <p class="tags">Areas: python, web design, image processing, sqlite
                     </p>
