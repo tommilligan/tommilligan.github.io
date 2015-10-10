@@ -6,14 +6,18 @@
 <div id="wrapper">
     <div id="topbar-wrapper">
         <div id='logo-holder'>
-            <a href="/"><img id='top-logo' src='assets/tommilligan.png' alt='Tom Milligan' width=720 /></a>
+            <a href="/"><img id='top-logo' src='assets/tommilligan.png' alt='Tom Milligan' width=600 /></a>
         </div>
         <div id='github-button'><a href='https://github.com/tommilligan' target="_blank"><img src='assets/GitHub-Mark-64px.png' alt='GitHub logo' title='tommilligan on GitHub' /></a></div>
     </div>
     <div id="content-wrapper">
         <div id='links-holder'>
             <div class="projecttitle">
-                <h2>Projects</h2>
+                <div class="shotholder">
+                </div>
+                <div class="textholder">
+                    <h2>Projects</h2>
+                </div>
             </div>
             <div id="LAlchemy-link" class="projectlink">
                 <div class="shotholder">
@@ -23,20 +27,20 @@
                 </div>
                 <div class="textholder">
                     <h4><a href='LAlchemy-Map' target="_blank">Little Alchemy - Network Map</a></h4>
-                    <p>Little Alchemy is a game where you <i>'combine and discover new elements'</i>.
+                    <p><a href='https://littlealchemy.com/' target="_blank">Little Alchemy</a> is a game where you <i>'combine and discover new elements'</i>.
                         A new element is created by adding two elements together.
                     </p>
                     <p>To visualise the network, elements and their parents were documented in XML, along with a calculated colour.
                         From any starting elements(s), children can be calculated to the nth degree and an svg network drawn using the javascript <a href="http://felix-kling.de/JSNetworkX/" target="_blank">jsNetworkX</a> library.
                     </p>
-                    <p>This was a good project for building JQuery and ajax/XML knowledge - I aimed to host this on Github pages, meaning no server side scripting.
+                    <p>This was a good project for building JQuery and ajax/XML knowledge - I aimed to host this on <a href="https://pages.github.com/" target="_blank">Github Pages</a>, meaning no server side scripting.
                         As one of the first truly interactive websites I have built, I learnt more about javascript's asynchronous style and control flow.
                     </p>                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='LAlchemy-Map' target="_blank">project website</a></p>
                     <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/LAlchemy-Map' target="_blank">source on Github</a></p>
                     <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://littlealchemy.com/' target="_blank">official Little Alchemy game</a></p>
                     <p class="tags">Areas: javascript, web design, interactive, XML
                     </p>
-                    </div>
+                </div>
             </div>
             <div id="WhatColorIsX-link" class="projectlink">
                 <div class="shotholder">
@@ -45,7 +49,7 @@
                     </a>
                 </div>
                 <div class="textholder">
-                    <h4><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">WhatColorIsX - Script</a></h4>
+                    <h4><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">WhatColorIsX - Python Package</a></h4>
                     <p>Simple script that takes any string, and returns a hex colour based on a Google image search.
                     </p>
                     <p>Using the <a href="https://developers.google.com/custom-search/" target="_blank">Google Custom Search API</a>, the script submits a search query and retrieves an image, calculating the average pixel colour and returning it as a hex value.
@@ -68,7 +72,7 @@
                 </div>
                 <div class="textholder">
                     <h4><a href='RainWorld-Map' target="_blank">Rain World - World Map</a></h4>
-                    <p>Rain World is an upcoming <i>'survival platformer set in an abandoned industrial environment ravaged by a shattered ecosystem'</i>.
+                    <p><a href='http://store.steampowered.com/app/312520/' target="_blank">Rain World</a> is an upcoming <i>'survival platformer set in an abandoned industrial environment ravaged by a shattered ecosystem'</i>.
                         In-game, the world consists of discrete rooms joined by abstract pipes.
                     </p>
                     <p>To make a map, the exits, connections and screenshots of each room were compiled manually into an <a href="http://sqlitebrowser.org/" target="_blank">sqlite database</a>.

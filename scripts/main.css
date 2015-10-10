@@ -1,6 +1,8 @@
 @font-face {
     font-family: "SourceSansPro";
-    src: url("../assets/fonts/SourceSansPro-Regular.otf");
+    src: url("../assets/fonts/SourceSansPro-BoldIt.otf");
+    font-weight: bold;
+    font-style: italic, oblique;
 }
 @font-face {
     font-family: "SourceSansPro";
@@ -14,9 +16,7 @@
 }
 @font-face {
     font-family: "SourceSansPro";
-    src: url("../assets/fonts/SourceSansPro-BoldIt.otf");
-    font-weight: bold;
-    font-style: italic, oblique;
+    src: url("../assets/fonts/SourceSansPro-Regular.otf");
 }
 @font-face {
     font-family: "saxmono";
@@ -62,7 +62,7 @@ div.projectlink, div.projecttitle {
     overflow: auto;
 }
 div.projectlink {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 img.projectscreenshot {
     width: 200px;
@@ -72,7 +72,7 @@ div.shotholder, div.textholder {
     padding: 10px;
 }
 div.shotholder {
-    width: 200px;
+    width: 202px;
     float: left;
 }
 div.textholder {
