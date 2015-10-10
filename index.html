@@ -1,23 +1,82 @@
 <!doctype html>
 <head>
-<style>
-html, body, #holder {
-    height:100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-#holder td {
-    vertical-align: middle;
-    text-align: center;
-}
-</style>
+    <link rel="stylesheet" type="text/css" href="scripts/main.css" />
 </head>
 <body>
-<table id='holder'>
-    <tr>
-        <td><img src='images/tommilligan.svg' alt='Tom Milligan' width=960 /></td>
-    </tr>
-</table>
+<div id="wrapper">
+    <div id="topbar-wrapper">
+        <div id='logo-holder'>
+            <a href="/"><img id='top-logo' src='assets/tommilligan.png' alt='Tom Milligan' width=720 /></a>
+        </div>
+        <div id='github-button'><a href='https://github.com/tommilligan' target="_blank"><img src='assets/GitHub-Mark-64px.png' alt='GitHub logo' title='tommilligan on GitHub' /></a></div>
+    </div>
+    <div id="content-wrapper">
+        <div id='links-holder'>
+            <div class="projectlink">
+                <h2>Projects<h2>
+            </div>
+            <div id="LAlchemy-link" class="projectlink">
+                <div class="shotholder">
+                    <a href='LAlchemy-Map' target="_blank">
+                        <img src='assets/projects/LAlchemy-Map.jpg' alt='Little Alchemy Map screenshot' class="projectscreenshot" />
+                    </a>
+                </div>
+                <div class="textholder">
+                    <h4><a href='LAlchemy-Map' target="_blank">Little Alchemy - Network Map</a></h4>
+                    <p>Little Alchemy is a game where you <i>'combine and discover new elements'</i>.
+                        A new element is created by adding two elements together.
+                    </p>
+                    <p>To visualise the network, elements and their parents were documented in XML, along with a calculated colour.
+                        From any starting elements(s), children can be calculated to the nth degree and an svg network drawn using the javascript <a href="http://felix-kling.de/JSNetworkX/" target="_blank">jsNetworkX</a> library.
+                    </p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='LAlchemy-Map' target="_blank">website</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/LAlchemy-Map' target="_blank">source</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://littlealchemy.com/' target="_blank">official Little Alchemy game</a></p>
+                    <p class="tags">Areas: javascript, web design, interactive, XML
+                    </p>
+                    </div>
+            </div>
+            <div id="WhatColorIsX-link" class="projectlink">
+                <div class="shotholder">
+                    <a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">
+                        <img src='assets/projects/WhatColorIsX.jpg' alt='WhatColorIsX screenshot' class="projectscreenshot" />
+                    </a>
+                </div>
+                <div class="textholder">
+                    <h4><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">WhatColorIsX - Script</a></h4>
+                    <p>Simple script that takes any string, and returns a hex colour based on a Google image search.
+                    </p>
+                    <p>Using the <a href="https://developers.google.com/custom-search/" target="_blank">Google Custom Search API</a>, the script submits a search query and retrieves an image, calculating the average pixel colour and returning it as a hex value.
+                        Optionally, only the hue can be returned (i.e. hsl = (x, 1.0, 0.5). 
+                    </p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">source</a></p>
+                    <p class="tags">Areas: python
+                    </p>
+                </div>
+            </div>
+            <div id="RainWorld-link" class="projectlink">
+                <div class="shotholder">
+                    <a href='RainWorld-Map' target="_blank">
+                        <img src='assets/projects/RainWorld-Map.jpg' alt='Rain World Map screenshot' class="projectscreenshot" />
+                    </a>
+                </div>
+                <div class="textholder">
+                    <h4><a href='RainWorld-Map' target="_blank">Rain World - World Map</a></h4>
+                    <p>Rain World is an upcoming <i>'survival platformer set in an abandoned industrial environment ravaged by a shattered ecosystem'</i>.
+                        In-game, the world consists of discrete rooms joined by abstract pipes.
+                    </p>
+                    <p>To make a map, the exits, connections and screenshots of each room were compiled manually into an <a href="http://sqlitebrowser.org/" target="_blank">sqlite database</a>.
+                        An force-algorithm network was generated using the python <a href="https://networkx.github.io/" target="_blank">NetworkX</a> module, and skinned using the PIL <a href="https://python-pillow.github.io/" target="_blank">Pillow fork</a>.
+                        The resulting large image was sliced and output in <a href="https://github.com/turban/Leaflet.Zoomify" target="_blank">Zoomify</a> format for web viewing with <a href="http://leafletjs.com/" target="_blank">Leaflet</a>.
+                    </p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='RainWorld-Map' target="_blank">website</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='https://github.com/tommilligan/RainWorld-Map' target="_blank">source</a></p>
+                    <p><img src="assets/newtab.png" alt="open in new tab" class="newtab" /><a href='http://store.steampowered.com/app/312520/' target="_blank">official Rain World on Steam</a></p>
+                    <p class="tags">Areas: python, web design, image processing, sqlite
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
