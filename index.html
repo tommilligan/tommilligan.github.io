@@ -1,126 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="scripts/main.css" />
+    <title>Tom Milligan - Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <div id="wrapper">
     <div id="topbar-wrapper">
         <div id='logo-holder'>
             <a href="/"><img id='top-logo' src='assets/tommilligan.png' alt='Tom Milligan' width=600 /></a>
-        <div id='github-button'><a href='https://github.com/tommilligan' target="_blank"><img src='assets/GitHub-Mark-64px.png' alt='GitHub logo' title='tommilligan on GitHub' /></a></div>
-
+            <div id='github-button'>
+                <a href='https://github.com/tommilligan' target="_blank">
+                    <img src='assets/GitHub-Mark-64px.png' alt='GitHub logo' title='tommilligan on GitHub' />
+                </a>
             </div>
+        </div>
     </div>
     <div id="content-wrapper">
-        <div id='links-holder'>
+        <div id='center-wrapper'>
             <div id="titlebar">
-                <h2>Projects</h2>
+                <h2></h2>
             </div>
-            <div id="LAlchemy-link" class="projectlink dark">
-                <div class="shotholder">
-                    <a href='http://tommilligan.github.io/LAlchemy-Map' target="_blank">
-                        <img src='assets/projects/LAlchemy-Map.jpg' alt='Little Alchemy Map screenshot' />
-                    </a>
+            
+    
+        <div id="LAlchemy-Map" class="rowholder even">
+            <div class="shotholder">
+                <a href="http://tommilligan.github.io/LAlchemy-Map" target="_blank">
+                    <img src='assets/projects/LAlchemy-Map.jpg' alt='LAlchemy-Map screenshot' />
+                </a>
+            </div>
+            <div class="textholder">
+                <h4><a name='LAlchemy-Map' href='http://tommilligan.github.io/LAlchemy-Map' target="_blank">Little Alchemy - Network Map</a></h4>
+                <p><a href='https://littlealchemy.com/' target='_blank'>Little Alchemy</a> is a game where you <i>'combine and discover new elements'</i>.A new element is created by adding two elements together. Drawing a network map can easily show how to make an astronaut, or what you call a human with a tool.</p>
+                <p><span class='expand' id='expand-0'>&nbsp;</span></p>
+                <div class='expandable' id='expandable-0'>
+                    <p>To visualise the network, elements and their parents were documented in XML, along with a precalculated colour (using my <a href='#WhatColorIsX'>WhatColorIsX</a> python module).From any set of starting elements, <i>n</i> generations of children are added to the network and an svg representation drawn using the javascript <a href='http://felix-kling.de/JSNetworkX/' target='_blank'>jsNetworkX</a> library.</p><p>This was a good project for building JQuery and ajax/XML knowledge - I aimed to host this on <a href='https://pages.github.com/' target='_blank'>Github Pages</a>, which doesn't allow server side scripting.As one of the first truly interactive websites I have built, I learnt more about javascript's asynchronous style and control flow.</p>
                 </div>
-                <div class="textholder">
-                    <h4><a name='LAlchemy-Map' href='http://tommilligan.github.io/LAlchemy-Map' target="_blank">Little Alchemy - Network Map</a></h4>
-                    <p><a href='https://littlealchemy.com/' target="_blank">Little Alchemy</a> is a game where you <i>'combine and discover new elements'</i>.
-                        A new element is created by adding two elements together. Drawing a network map can easily show how to make an astronaut, or what you call a human with a tool. 
-                    </p>
-                    <p class='expand' id='expand-3'>&nbsp;
-                    </p>
-                    <div class='expandable' id='expandable-3'>
-                        <p>To visualise the network, elements and their parents were documented in XML, along with a precalculated colour (using my <a href='#WhatColorIsX'>WhatColorIsX</a> python module).
-                            From any set of starting elements, <i>n</i> generations of children are added to the network and an svg representation drawn using the javascript <a href="http://felix-kling.de/JSNetworkX/" target="_blank">jsNetworkX</a> library.
-                        </p>
-                        <p>This was a good project for building JQuery and ajax/XML knowledge - I aimed to host this on <a href="https://pages.github.com/" target="_blank">Github Pages</a>, which doesn't allow server side scripting.
-                            As one of the first truly interactive websites I have built, I learnt more about javascript's asynchronous style and control flow.
-                        </p>
-                    </div>
-                    <ul class='projlinkslist'>
+                <ul class='projlinkslist'>
+                    
                         <li><a href='http://tommilligan.github.io/LAlchemy-Map' target="_blank">project website</a></li>
+                    
                         <li><a href='https://github.com/tommilligan/LAlchemy-Map' target="_blank">source on Github</a></li>
+                    
                         <li><a href='https://littlealchemy.com/' target="_blank">official Little Alchemy game</a></li>
-                    </ul>
-                    <p class="tags">Areas: javascript, web design, interactive, XML
-                    </p>
-                </div>
+                    
+                </ul>
+                <p class="tags">Areas: javascript, web design, interactive, XML</p>
             </div>
-            <div id="WhatColorIsX-link" class="projectlink light">
-                <div class="shotholder">
-                    <a href='http://whatcolorisx.readthedocs.org/en/stable/' target="_blank">
-                        <img src='assets/projects/WhatColorIsX.jpg' alt='WhatColorIsX screenshot' />
-                    </a>
+        </div>
+    
+        <div id="WhatColorIsX" class="rowholder odd">
+            <div class="shotholder">
+                <a href="http://whatcolorisx.readthedocs.org/en/stable/" target="_blank">
+                    <img src='assets/projects/WhatColorIsX.jpg' alt='WhatColorIsX screenshot' />
+                </a>
+            </div>
+            <div class="textholder">
+                <h4><a name='WhatColorIsX' href='http://whatcolorisx.readthedocs.org/en/stable/' target="_blank">WhatColorIsX - Python Module</a></h4>
+                <p>WhatColorIsX is a simple python module that aims to answer one question well - what colour is this string? Useful for automating colour generation for multiple items, WhatColorIsX can also be used to examine local files.</p>
+                <p><span class='expand' id='expand-1'>&nbsp;</span></p>
+                <div class='expandable' id='expandable-1'>
+                    <p>Using the <a href='https://developers.google.com/custom-search/' target='_blank'>Google Custom Search API</a>, the script submits a search query and retrieves an image, calculating the average pixel colour and returning it as a hex value.</p><p>The script can also be forced to return a bright hue (i.e. hsl = ([0.0-1.0], 1.0, 0.5)), to avoid neutral colours being returned.</p><p>This is the first Python module I have written up neatly and posted on <a href='https://pypi.python.org/pypi' target='_blank'>PyPI</a>, which allows it to be easily downloaded and used by others.I also used this as an opportunity to learn other project management skills, such as:</p><ul class='linkslist'><li>writing documentation using <a href='http://whatcolorisx.readthedocs.org/en/stable/' target='_blank'>sphinx/ReadTheDocs.org</a></li><li>testing using <a href='https://travis-ci.org/tommilligan/WhatColorIsX/branches' target='_blank'>nosetests/Travis-CI.org</a></li><li>checking coverage with <a href='https://coveralls.io/github/tommilligan/WhatColorIsX?branch=master#' target='_blank'>coverage/Coveralls.io</a></li></ul><p>I used this module in my <a href='#LAlchemy-Map'>LAlchemy-Map project</a>.</p>
                 </div>
-                <div class="textholder">
-                    <h4><a name='WhatColorIsX' href='http://whatcolorisx.readthedocs.org/en/stable/' target="_blank">WhatColorIsX - Python Module</a></h4>
-                    <p>WhatColorIsX is a simple python module that aims to answer one question well - what colour is this string?
-                    Useful for automating colour generation for multiple items, WhatColorIsX can also be used to examine local files.
-                    </p>
-                    <p class='expand' id='expand-2'>&nbsp;
-                    </p>
-                    <div class='expandable' id='expandable-2'>
-                        <p>Using the <a href="https://developers.google.com/custom-search/" target="_blank">Google Custom Search API</a>, the script submits a search query and retrieves an image, calculating the average pixel colour and returning it as a hex value.
-                        </p>
-                        <p>The script can also be forced to return a bright hue (i.e. hsl = ([0.0-1.0], 1.0, 0.5)), to avoid neutral colours being returned.
-                        </p>
-                        <p>This is the first Python module I have written up neatly and posted on <a href="https://pypi.python.org/pypi" target="_blank">PyPI</a>, which allows it to be easily downloaded and used by others.
-                            I also used this as an opportunity to learn other project management skills, such as:
-                        </p>
-                        <ul class='linkslist'>
-                            <li>writing documentation using <a href='http://whatcolorisx.readthedocs.org/en/stable/' target='_blank'>sphinx/ReadTheDocs.org</a></li>
-                            <li>testing using <a href='https://travis-ci.org/tommilligan/WhatColorIsX/branches' target='_blank'>nosetests/Travis-CI.org</a></li>
-                            <li>checking coverage with <a href='https://coveralls.io/github/tommilligan/WhatColorIsX?branch=master#' target='_blank'>coverage/Coveralls.io</a></li>
-                        </ul>
-                        <p>I used this module in my <a href='#LAlchemy-Map'>LAlchemy-Map project</a>.
-                        </p>
-                    </div>
-                    <ul class='projlinkslist'>
+                <ul class='projlinkslist'>
+                    
                         <li><a href='http://whatcolorisx.readthedocs.org/en/stable/' target="_blank">documentation on ReadTheDocs</a></li>
+                    
                         <li><a href='https://github.com/tommilligan/WhatColorIsX' target="_blank">source on Github</a></li>
+                    
                         <li><a href='https://pypi.python.org/pypi/WhatColorIsX' target="_blank">module on PyPI</a></li>
-                    </ul>
-                    <p class="tags">Areas: python, image processing, Google API, testing, documentation
-                    </p>
-                </div>
+                    
+                </ul>
+                <p class="tags">Areas: python, image processing, Google API, testing, documentation</p>
             </div>
-            <div id="RainWorld-link" class="projectlink dark">
-                <div class="shotholder">
-                    <a href='http://tommilligan.github.io/RainWorld-Map' target="_blank">
-                        <img src='assets/projects/RainWorld-Map.jpg' alt='Rain World Map screenshot' />
-                    </a>
+        </div>
+    
+        <div id="RainWorld-Map" class="rowholder even">
+            <div class="shotholder">
+                <a href="http://tommilligan.github.io/RainWorld-Map" target="_blank">
+                    <img src='assets/projects/RainWorld-Map.jpg' alt='RainWorld-Map screenshot' />
+                </a>
+            </div>
+            <div class="textholder">
+                <h4><a name='RainWorld-Map' href='http://tommilligan.github.io/RainWorld-Map' target="_blank">Rain World - World Map</a></h4>
+                <p><a href='http://store.steampowered.com/app/312520/' target='_blank'>Rain World</a> is an upcoming <i>'survival platformer set in an abandoned industrial environment ravaged by a shattered ecosystem'</i>. In-game, the world consists of discrete rooms joined by abstract pipes - making it hard for a player to orientate themselves. For the severely lost, there is this map!</p>
+                <p><span class='expand' id='expand-2'>&nbsp;</span></p>
+                <div class='expandable' id='expandable-2'>
+                    <p>To make a map, the exits, connections and screenshots of each room were compiled manually into an <a href='http://sqlitebrowser.org/' target='_blank'>sqlite database</a>. An force-algorithm network was generated using the python <a href='https://networkx.github.io/' target='_blank'>NetworkX</a> module, and skinned using the PIL <a href='https://python-pillow.github.io/' target='_blank'>Pillow fork</a>. The resulting large image was sliced and output in <a href='https://github.com/turban/Leaflet.Zoomify' target='_blank'>Zoomify</a> format for web viewing with <a href='http://leafletjs.com/' target='_blank'>Leaflet</a>.</p><p>This was the first project I built using <a href='https://git-scm.com/' target='_blank'>git</a> and <a href='https://github.com/' target='_blank'>GitHub</a>, and now understand the benefits of version control!I plan to continue using git in my future projects, and enjoy contributing on GitHub.</p><p>This project had a few good challenges, mostly working with images bigger than single process memory allowance (~2GB).Hopefully I will continue to improve this project for the game's public release; potential improvements include eliminating manual data entry, improving readability and reducing stored image size.</p>
                 </div>
-                <div class="textholder">
-                    <h4><a name='RainWorld-Map' href='http://tommilligan.github.io/RainWorld-Map' target="_blank">Rain World - World Map</a></h4>
-                    <p><a href='http://store.steampowered.com/app/312520/' target="_blank">Rain World</a> is an upcoming <i>'survival platformer set in an abandoned industrial environment ravaged by a shattered ecosystem'</i>.
-                        In-game, the world consists of discrete rooms joined by abstract pipes - making it hard for a player to orientate themselves. For the severely lost, there is this map!
-                    </p>
-                    <p class='expand' id='expand-1'>&nbsp;
-                    </p>
-                    <div class='expandable' id='expandable-1'>
-                        <p>To make a map, the exits, connections and screenshots of each room were compiled manually into an <a href="http://sqlitebrowser.org/" target="_blank">sqlite database</a>.
-                            An force-algorithm network was generated using the python <a href="https://networkx.github.io/" target="_blank">NetworkX</a> module, and skinned using the PIL <a href="https://python-pillow.github.io/" target="_blank">Pillow fork</a>.
-                            The resulting large image was sliced and output in <a href="https://github.com/turban/Leaflet.Zoomify" target="_blank">Zoomify</a> format for web viewing with <a href="http://leafletjs.com/" target="_blank">Leaflet</a>.
-                        </p>
-                        <p>This was the first project I built using <a href='https://git-scm.com/' target='_blank'>git</a> and <a href='https://github.com/' target='_blank'>GitHub</a>, and now understand the benefits of version control!
-                        I plan to continue using git in my future projects, and enjoy contributing on GitHub.
-                        </p>
-                        <p>This project had a few good challenges, mostly working with images bigger than single process memory allowance (~2GB).
-                            Hopefully I will continue to improve this project for the game's public release; potential improvements include eliminating manual data entry, improving readability and reducing stored image size.
-                        </p>
-                    </div>
-                    <ul class='projlinkslist'>
+                <ul class='projlinkslist'>
+                    
                         <li><a href='http://tommilligan.github.io/RainWorld-Map' target="_blank">project website</a></li>
+                    
                         <li><a href='https://github.com/tommilligan/RainWorld-Map' target="_blank">source on Github</a></li>
+                    
                         <li><a href='http://store.steampowered.com/app/312520/' target="_blank">official Rain World on Steam</a></li>
-                    </ul>
-                    <p class="tags">Areas: python, sqlite, web design, image processing, git, version control
-                    </p>
-                </div>
+                    
+                </ul>
+                <p class="tags">Areas: python, sqlite, web design, image processing, git, version control</p>
             </div>
-            <div id='bottombar'>
+        </div>
+    
+
+            <div id='footer'>
                 <p>code@tommilligan.net
                 </p>
             </div>
@@ -128,4 +112,4 @@
     </div>
 </div>
 </body>
-
+</html>

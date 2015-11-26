@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tom Milligan - {% block title %}Base{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="topbar-wrapper">
+        <div id='logo-holder'>
+            <a href="/"><img id='top-logo' src='assets/tommilligan.png' alt='Tom Milligan' width=600 /></a>
+            <div id='github-button'>
+                <a href='https://github.com/tommilligan' target="_blank">
+                    <img src='assets/GitHub-Mark-64px.png' alt='GitHub logo' title='tommilligan on GitHub' />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="content-wrapper">
+        <div id='center-wrapper'>
+            <div id="titlebar">
+                <h2>{{title}}</h2>
+            </div>
+            {% block content %}Nothing to see here!{% endblock %}
+            <div id='footer'>
+                <p>code@tommilligan.net
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
