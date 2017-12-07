@@ -3,10 +3,6 @@ module.exports = {
   "plugins": [ "flowtype" ],
   "parser": "babel-eslint",
   "rules": {
-    "SwitchCase": [
-      "warn",
-      1
-    ],
     "strict": 0,
     "indent": [
         "warn",
@@ -25,7 +21,7 @@ module.exports = {
     ],
     "allowTemplateLiterals": 0,
     "semi": [
-        "error",
+        "warn",
         "always"
     ]
   }

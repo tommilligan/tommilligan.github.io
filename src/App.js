@@ -3,7 +3,7 @@
 import React from "react";
 import { Container, Header, Segment } from "semantic-ui-react";
 import "./App.css";
-import Logo from "./components/logo";
+import Logo, {LogoEnum} from "./components/logo";
 
 const App = (props: any) => (
   <div className="App">
@@ -23,9 +23,11 @@ const App = (props: any) => (
     </Segment>
     <Container>
       eggs
-      <Logo size="teensy" />
+      <Logo name={LogoEnum.PYTHON} />
+      <Logo name={LogoEnum.HEROKU} />
+      <Logo name={LogoEnum.ELASTICSEARCH} />
     </Container>
   </div>
-)
+);
 
 export default App;

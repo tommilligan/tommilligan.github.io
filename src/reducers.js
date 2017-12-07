@@ -1,4 +1,4 @@
-import portfolio from './portfolio/reducer';
+import portfolio from "./portfolio/reducer";
 
 const reducers = {
   portfolio

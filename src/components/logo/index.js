@@ -1,18 +1,37 @@
+// @flow
+
 import React from "react";
 import { Image } from "semantic-ui-react";
-import * as _ from "lodash";
+import Immutable from "immutable";
 
 import python from "./svg/python.svg";
+import heroku from "./svg/heroku.svg";
+import elasticsearch from "./svg/elasticsearch.svg";
 
-const Logo = props => {
-  let imageProps = _.omit(props, "logo");
-  imageProps.src = python;
-  if (props.size === "teensy") {
-    imageProps = _.omit(imageProps, "size");
-    imageProps.width = 30;
-    imageProps.height = 30;
-  }
-  return <Image {...imageProps} />;
+const logoSize = 30;
+
+export const LogoEnum = {
+  PYTHON: "PYTHON",
+  HEROKU: "HEROKU",
+  ELASTICSEARCH: "ELASTICSEARCH"
+};
+
+const logoSourcemap: Immutable.Map<$Keys<typeof LogoEnum>, string> = Immutable.Map([
+  [LogoEnum.PYTHON, python],
+  [LogoEnum.HEROKU, heroku],
+  [LogoEnum.ELASTICSEARCH, elasticsearch]
+]);
+
+const Logo = ({name}: {name: $Keys<typeof LogoEnum>}) => {
+  return (
+    <div style={{ width: logoSize, height: logoSize }}>
+      <Image
+        centered
+        src={logoSourcemap.get(name)}
+        style={{ maxWidth: logoSize, maxHeight: logoSize }}
+      />
+    </div>
+  );
 };
 
 export default Logo;
