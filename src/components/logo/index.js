@@ -31,7 +31,7 @@ export const LogoEnum = {
   WEBPACK: "WEBPACK"
 };
 
-const logoSize = 30;
+const logoSize = 40;
 
 const logoSourcemap: Immutable.Map<$Keys<typeof LogoEnum>, string> = Immutable.Map([
   [LogoEnum.D3, d3],
