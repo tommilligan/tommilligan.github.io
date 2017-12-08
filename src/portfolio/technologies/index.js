@@ -4,12 +4,15 @@ import React from "react";
 import { Segment } from "semantic-ui-react";
 
 import Logo, {LogoEnum} from "../../components/logo";
+import Toggle from "../../components/toggle";
 
 const Technologies = () => {
   const logoArray = Object.keys(LogoEnum).map(logoKey => {
     return (
       <div key={logoKey} style={{ margin: "0 5px" }}>
-        <Logo name={LogoEnum[logoKey]} />
+        <Toggle>
+          <Logo name={LogoEnum[logoKey]} />
+        </Toggle>
       </div>
     );
   });

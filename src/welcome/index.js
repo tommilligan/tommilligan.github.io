@@ -1,7 +1,7 @@
 // @flow
 
 import React from "react";
-import { Container, Segment, Grid } from "semantic-ui-react";
+import { Segment, Grid } from "semantic-ui-react";
 
 const Welcome = (props: any) => {
   return (
